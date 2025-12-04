@@ -29,5 +29,46 @@ work flow:-
     - Register/Login
     - Enter OTP to Receive Food
     - View Received Food History
+
+
+
+Scrap-to-Smile/
+├── backend/
+│   ├── models/
+│   │   ├── User.js
+│   │   ├── Donation.js
+│   │   └── Request.js
+│   ├── routes/
+│   │   ├── auth.js
+│   │   ├── donations.js
+│   │   └── requests.js
+│   ├── middleware/
+│   │   └── auth.js
+│   ├── config/
+│   │   └── db.js
+│   ├── server.js
+│   └── package.json
+├── frontend/
+│   ├── src/
+│   │   ├── components/
+│   │   │   ├── DonationForm.jsx
+│   │   │   ├── DonationList.jsx
+│   │   │   └── Navbar.jsx
+│   │   ├── pages/
+│   │   │   ├── Home.jsx
+│   │   │   ├── Login.jsx
+│   │   │   ├── Register.jsx
+│   │   │   ├── DonorDashboard.jsx
+│   │   │   ├── VolunteerDashboard.jsx
+│   │   │   └── AdminDashboard.jsx
+│   │   ├── context/
+│   │   │   └── AuthContext.jsx
+│   │   ├── socket.js
+│   │   ├── App.jsx
+│   │   └── main.jsx
+│   ├── index.html
+│   ├── package.json
+│   └── vite.config.js
+└── README.md
  
  
