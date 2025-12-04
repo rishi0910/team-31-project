@@ -10,6 +10,7 @@ import Register from './pages/Register.jsx';
 import DonorDashboard from './pages/DonorDashboard.jsx';
 import VolunteerDashboard from './pages/VolunteerDashboard.jsx';
 import AdminDashboard from './pages/AdminDashboard.jsx';
+import ReceiverDashboard from './pages/ReceiverDashboard.jsx';
 
 function App() {
   return (
@@ -27,6 +28,7 @@ function App() {
               <Route path="/donor" element={<DonorDashboard />} />
               <Route path="/volunteer" element={<VolunteerDashboard />} />
               <Route path="/admin" element={<AdminDashboard />} />
+              <Route path="/receiver" element={<ReceiverDashboard />} />
             </Routes>
           </main>
           <Footer />

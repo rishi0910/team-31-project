@@ -3,6 +3,8 @@ import { FaUtensils, FaMapMarkerAlt, FaClock } from 'react-icons/fa';
 import axios from 'axios';
 import AuthContext from '../context/AuthContext';
 import socket from '../socket';
+import DonorOTPVerification from './DonorOTPVerification';
+import VolunteerOTPVerification from './VolunteerOTPVerification';
 
 axios.defaults.baseURL = process.env.NODE_ENV === 'production' 
   ? 'https://harvesthub-backend-siy2.onrender.com' 
@@ -146,6 +148,8 @@ const DonationList = ({ role }) => {
     }
   };
 
+
+
   const formatDate = (dateString) => {
     return new Date(dateString).toLocaleString();
   };
@@ -256,13 +260,25 @@ const DonationList = ({ role }) => {
                       ⏳ Request Submitted
                     </button>
                   )}
-                  {donation.status === 'claimed' && (
-                    <button
-                      disabled
-                      className="w-full bg-green-500 text-white px-4 py-2 rounded cursor-not-allowed opacity-75"
-                    >
-                      ✓ Request Accepted
-                    </button>
+                  {role === 'volunteer' && donation.status === 'claimed' && (
+                    <VolunteerOTPVerification 
+                      donation={donation} 
+                      onVerificationSuccess={(updatedDonation) => {
+                        setDonations(prevDonations =>
+                          prevDonations.map(d => d._id === updatedDonation._id ? updatedDonation : d)
+                        );
+                      }}
+                    />
+                  )}
+                  {role === 'donor' && donation.status === 'claimed' && (
+                    <DonorOTPVerification 
+                      donation={donation} 
+                      onVerificationSuccess={(updatedDonation) => {
+                        setDonations(prevDonations =>
+                          prevDonations.map(d => d._id === updatedDonation._id ? updatedDonation : d)
+                        );
+                      }}
+                    />
                   )}
                 </div>
               )}
