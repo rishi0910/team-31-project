@@ -72,3 +72,26 @@ Scrap-to-Smile/
 │   └── vite.config.js
 └── README.md
 ```
+ Tech Stack
+ Frontend
+- React.js for building user dashboards for donor, volunteer, admin and receiver
+- Vite as the development bundler
+- Context API for authentication and global state
+- Axios for API requests
+- Socket.io client for real-time updates
+- TailwindCSS or CSS for styling
+
+ Backend
+- Node.js as the server environment
+- Express.js for building REST APIs
+- MongoDB for storing users, donations and requests
+- Mongoose for schema modeling
+- JWT for authentication
+- Bcrypt.js for password hashing
+- Socket.io for real-time communication
+
+ Additional Tools
+- Git and GitHub for version control and team collaboration
+- Postman for API testing
+
+
