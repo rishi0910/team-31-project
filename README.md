@@ -17,10 +17,17 @@ work flow:-
 2.donor
     - Register/Login
     - Create Donation Request
+    - Verify Volunteer with OTP for Pickup
     - View Donation History
-3.Volunter:-
+3.Volunteer:-
     - Register/Login
     - View Assigned Pickups
+    - Verify Pickup with Donor OTP
+    - Generate OTP for Food Delivery
     - Update Pickup Status
+4.Receiver:-
+    - Register/Login
+    - Enter OTP to Receive Food
+    - View Received Food History
  
  
