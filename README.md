@@ -73,6 +73,7 @@ Scrap-to-Smile/
 └── README.md
 ```
  Tech Stack
+ 
  Frontend
 - React.js for building user dashboards for donor, volunteer, admin and receiver
 - Vite as the development bundler
