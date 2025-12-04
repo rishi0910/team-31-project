@@ -8,6 +8,7 @@ Team-Members:
 
 Problem Statement: Food Donation & Pickup Coordination System 
 work flow:-
+```
 1.Admin
     - Login
     - View Requests
@@ -70,3 +71,4 @@ Scrap-to-Smile/
 │   ├── package.json
 │   └── vite.config.js
 └── README.md
+```
