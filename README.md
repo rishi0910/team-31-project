@@ -70,5 +70,3 @@ Scrap-to-Smile/
 │   ├── package.json
 │   └── vite.config.js
 └── README.md
- 
- 
